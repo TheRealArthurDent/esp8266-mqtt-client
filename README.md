@@ -1,7 +1,8 @@
 # esp8266-mqtt-client
-[![Check Arduino status](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/check-arduino.yml/badge.svg)](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/check-arduino.yml)
-[![Compile Sketch status](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/compile-sketch.yml/badge.svg)](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/compile-sketch.yml)
-[![Spell Check status](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/spell-check.yml/badge.svg)](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/spell-check.yml)
+[![Check Arduino status](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/check-arduino.yaml/badge.svg)](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/check-arduino.yaml)
+[![CPP Lint status](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/cpp-lint.yaml/badge.svg)](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/cpp-lint.yaml)
+[![Compile Sketch status](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/compile-sketch.yaml/badge.svg)](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/compile-sketch.yaml)
+[![Spell Check status](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/spell-check.yaml/badge.svg)](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/spell-check.yaml)
 
 ### Description
 
