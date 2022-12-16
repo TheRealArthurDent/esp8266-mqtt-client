@@ -4,7 +4,7 @@
 #include "led.h"
 #include "debug.h"
 #include "wifi-connection.h"
-#include "dummy-wifi-dependent.h"
+#include "mqtt-client.h"
 
 // cppcheck-suppress unusedFunction
 void setup()
@@ -17,12 +17,11 @@ void setup()
   digitalWrite(led_built_in_Node, HIGH);
   digitalWrite(led_built_in_ESP, HIGH);
 
-  DummyWifiDependent dependent1;
-  DummyWifiDependent dependent2;
+  MqttClient mqttClient;
+  mqttClient.init();
 
   std::list<WifiDependent *> deps;
-  deps.push_back(&dependent1);
-  deps.push_back(&dependent2);
+  deps.push_back(&mqttClient);
 
   WifiConnection::getInstance().init(deps);
 }

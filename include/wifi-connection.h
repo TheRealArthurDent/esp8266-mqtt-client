@@ -43,4 +43,4 @@ private:
   static void onWifiDisconnect(const WiFiEventStationModeDisconnected &event);
 };
 
-#endif
+#endif // WIFI_CONNECTION_H

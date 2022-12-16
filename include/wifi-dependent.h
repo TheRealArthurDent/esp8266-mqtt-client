@@ -9,4 +9,4 @@ public:
   virtual void onWifiConnectionLost() {}
 };
 
-#endif
+#endif // WIFI_DEPENDENT_H

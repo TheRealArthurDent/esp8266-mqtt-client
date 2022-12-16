@@ -38,12 +38,16 @@ void MqttClient::connect()
   mqttClient.connect();
 }
 
+// cppcheck-suppress unusedFunction
+// used by void WifiConnection::notifyDependentsConnected()
 void MqttClient::onWifiConnectionEstablished()
 {
   DEBUG_PRINTLN("WiFi connected!");
   connect();
 }
 
+// cppcheck-suppress unusedFunction
+// used by void WifiConnection::notifyDependentsDisconnected()
 void MqttClient::onWifiConnectionLost()
 {
   DEBUG_PRINTLN("WiFi disconnected!");

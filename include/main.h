@@ -3,4 +3,4 @@
 
 void blinkLed();
 
-#endif
+#endif // MAIN_H
