@@ -1,7 +1,6 @@
-#ifndef DEBUG_H
-#define DEBUG_H
+#pragma once
 
-#include <Arduino.h>
+#include "Arduino.h"
 
 #ifdef DEBUG
 #define DEBUG_PRINT(x) Serial.print(x)
@@ -12,5 +11,3 @@
 #endif
 
 void initDebugging();
-
-#endif // DEBUG_H

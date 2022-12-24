@@ -1,10 +1,9 @@
-#ifndef WIFI_CONNECTION_H
-#define WIFI_CONNECTION_H
+#pragma once
 
-#include <ESP8266WiFi.h>
+#include "ESP8266WiFi.h"
 #include <list>
 #include <vector>
-#include "wifi-dependent.h"
+#include "wifi-dependent.hpp"
 
 class WifiConnection
 {
@@ -14,20 +13,20 @@ class WifiConnection
 
   // Singleton "constructor"
 public:
-  static WifiConnection &getInstance()
+  static auto getInstance() -> WifiConnection &
   {
     static WifiConnection instance;
     return instance;
   }
   // hide constructor, copy constructor and = operator
 private:
-  WifiConnection() {}                     // hide default constructor
+  WifiConnection() = default;             // hide default constructor
   WifiConnection(WifiConnection const &); // Don't implement.
   void operator=(WifiConnection const &); // Don't implement.
 
   // normal methods
 public:
-  bool isConnected();
+  auto isConnected() -> bool;
   void init();
   void init(std::list<WifiDependent *> dependents);
   // void addDependent
@@ -42,5 +41,3 @@ private:
   static void onWifiConnect(const WiFiEventStationModeGotIP &event);
   static void onWifiDisconnect(const WiFiEventStationModeDisconnected &event);
 };
-
-#endif // WIFI_CONNECTION_H
