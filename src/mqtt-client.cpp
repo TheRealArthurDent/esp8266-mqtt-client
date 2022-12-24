@@ -1,7 +1,7 @@
-#include "mqtt-client.h"
-#include <Ticker.h>
+#include "mqtt-client.hpp"
+#include "Ticker.h"
 #include "debug.h"
-#include "wifi-connection.h"
+#include "wifi-connection.hpp"
 #include "mqtt-secrets.h"
 
 // set default port if omitted
