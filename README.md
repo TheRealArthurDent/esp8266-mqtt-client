@@ -1,7 +1,30 @@
 # esp8266-mqtt-client
-[![Check Arduino status](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/check-arduino.yml/badge.svg)](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/check-arduino.yml)
-[![Compile Sketch status](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/compile-sketch.yml/badge.svg)](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/compile-sketch.yml)
-[![Spell Check status](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/spell-check.yml/badge.svg)](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/spell-check.yml)
+
+License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Status
+
+[![PlatformIO Code Check](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/platformio-check.yaml/badge.svg)](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/platformio-check.yaml)
+[![PlatformIO CI](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/platformio-ci.yaml/badge.svg)](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/platformio-ci.yaml)
+[![CPP Lint status](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/cpp-lint.yaml/badge.svg)](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/cpp-lint.yaml)
+[![Spell Check status](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/spell-check.yaml/badge.svg)](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/spell-check.yaml)
+
+### Compatibility with Arduino IDE
+
+[![Check Arduino status](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/check-arduino.yaml/badge.svg)](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/check-arduino.yaml)
+[![Compile Sketch status](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/compile-sketch.yaml/badge.svg)](https://github.com/TheRealArthurDent/esp8266-mqtt-client/actions/workflows/compile-sketch.yaml)
+
+Always fresh
+
+[![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)
+
+Open topics
+
+[![GitHub issues](https://img.shields.io/github/issues/TheRealArthurDent/esp8266-mqtt-client.svg)](https://GitHub.com/TheRealArthurDent/esp8266-mqtt-client/issues/)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/TheRealArthurDent/esp8266-mqtt-client.svg)](https://GitHub.com/TheRealArthurDent/esp8266-mqtt-client/pull/)
+
 
 ### Description
 
@@ -12,4 +35,5 @@ If started with "#define DEBUG" it will log the progress via the Serial port.
 
 ### How-to-use
 
-To be able to compile the project locally, copy the wifi_secrets.h.example to wifi_secrets.h and adjust the values within said file.
+To be able to compile the project locally, copy the wifi-secrets.h.example to wifi-secrets.h and adjust the values within said file.
+Proceed in the same way with mqtt-secrets.h.example.
