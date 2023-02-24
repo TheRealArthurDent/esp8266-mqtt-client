@@ -2,14 +2,8 @@
 #include "Ticker.h"
 #include "debug.h"
 #include "wifi-connection.hpp"
-#include "mqtt-secrets.h"
 
-// set default port if omitted
-#ifndef SECRET_MQTT_PORT
-#define SECRET_MQTT_PORT 1883
-#endif
-
-char mqttHost[] = SECRET_MQTT_HOSTNAME;
+char mqttHost[] = SECRET_MQTT_HOST;
 
 AsyncMqttClient mqttClient;
 Ticker mqttReconnectTimer;
@@ -28,8 +22,8 @@ void MqttClient::init()
   mqttClient.onMessage([this](char *topic, char *payload, AsyncMqttClientMessageProperties properties, size_t len, size_t index, size_t total)
                        { onMessage(topic, payload, properties, len, index, total); });
   // mqttClient.onPublish(onMqttPublish);
-  mqttClient.setCredentials(SECRET_MQTT_USER, SECRET_MQTT_PASS);
-  mqttClient.setServer(SECRET_MQTT_HOSTNAME, SECRET_MQTT_PORT);
+  mqttClient.setCredentials(SECRET_MQTT_USER, SECRET_MQTT_PASSWD);
+  mqttClient.setServer(SECRET_MQTT_HOST, SECRET_MQTT_PORT);
 }
 
 void MqttClient::connect()
