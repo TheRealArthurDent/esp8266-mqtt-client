@@ -8,8 +8,8 @@ class MqttClient : public WifiDependent
 
 public:
   void init();
-  virtual void onWifiConnectionEstablished() override;
-  virtual void onWifiConnectionLost() override;
+  void onWifiConnectionEstablished() override;
+  void onWifiConnectionLost() override;
 
 private:
   void connect();
