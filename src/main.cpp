@@ -4,6 +4,7 @@
 #include "led.h"
 #include "debug.h"
 #include "wifi-connection.hpp"
+#include "ota-handler.hpp"
 #include "mqtt-client.hpp"
 
 #define BLINK_INTERVAL 2500
@@ -23,6 +24,7 @@ void setup()
   mqttClient.init();
 
   std::list<WifiDependent *> deps;
+  deps.push_back(&OtaHandler::getInstance());
   deps.push_back(&mqttClient);
 
   WifiConnection::getInstance().init(deps);
@@ -32,6 +34,7 @@ void setup()
 void loop()
 {
   blinkLed();
+  OtaHandler::getInstance().handleUpload();
 }
 
 void blinkLed()
