@@ -7,7 +7,7 @@
 #include "ota-handler.hpp"
 #include "mqtt-client.hpp"
 
-#define BLINK_INTERVAL 2500
+const int BLINK_INTERVAL = 2500;
 
 // cppcheck-suppress unusedFunction
 void setup()
