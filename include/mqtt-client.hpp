@@ -5,14 +5,14 @@
 
 class MqttClient : public WifiDependent
 {
-  char *connectionStatusTopic;
-
 public:
   void init();
   void onWifiConnectionEstablished() override;
   void onWifiConnectionLost() override;
 
 private:
+  char *connectionStatusTopic;
+
   void connect();
   void onConnect(boolean sessionPresent);
   void onDisconnect(AsyncMqttClientDisconnectReason reason);
