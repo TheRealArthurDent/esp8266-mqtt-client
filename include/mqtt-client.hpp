@@ -5,6 +5,7 @@
 
 class MqttClient : public WifiDependent
 {
+  char *connectionStatusTopic;
 
 public:
   void init();
